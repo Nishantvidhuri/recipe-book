@@ -93,10 +93,10 @@ recipe-book/
 ## Screenshots
 
 ### Home Page
-![Home Page](https://via.placeholder.com/800x400?text=Home+Page+Screenshot)
+![Home Page](./ss1.png)
 
 ### Recipe Details Page
-![Recipe Details](https://via.placeholder.com/800x400?text=Recipe+Details+Page+Screenshot)
+![Recipe Details](./ss2.png)
 
 ## API Integration
 
