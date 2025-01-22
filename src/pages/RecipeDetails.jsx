@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams  } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useSavedRecipes } from "../context/SavedRecipesContext";
 
@@ -102,17 +102,14 @@ const RecipeDetails = () => {
         <div className="bg-gray-800 rounded-lg p-6 shadow-lg">
           <ol className="space-y-6">
             {recipe.analyzedInstructions[0].steps.map((step, index) => (
-              <li
-                key={index}
-                className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0"
-              >
+              <li key={index} className="flex space-x-4">
                 {/* Step Number */}
                 <div className="flex-shrink-0 flex items-center justify-center bg-yellow-500 text-gray-900 font-bold w-12 h-12 rounded-full shadow-md">
                   {index + 1}
                 </div>
                 {/* Step Description */}
                 <div>
-                  <p className="text-base sm:text-lg text-gray-300 leading-relaxed">
+                  <p className="text-lg text-gray-300 leading-relaxed">
                     {step.step}
                   </p>
                   {step.ingredients && step.ingredients.length > 0 && (
